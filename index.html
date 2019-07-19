@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title> papajohns </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5shiv.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div id="skip">
+        <a href="#container">본문 바로가기</a>
+    </div>
+
+    <header id="header">
+        <h1 class="logo"><a href="index.html"><img src="images/common/logo.png" alt="파파존스"></a></h1>
+        <ul class="util clearfix">
+            <li><a href=""><img src="images/main/join.png" alt="로그인" width="26" height="28"></a></li>
+            <li><a href=""><img src="images/main/cart.png" alt="장바구니" width="36" height="29"></a></li>
+        </ul>
+        <a href="" class="open_btn">
+            <img src="images/common/open.png" alt="메뉴열기" width="50" height="50">
+        </a>
+        <nav id="gnb">
+            <div><img src="images/common/logo.png" alt="" width="190" height="80"></div>
+            <ul class="clearfix">
+                <li>
+                    <a href="menu/pizza.html" data-link="first">메뉴</a>
+                </li>
+                <li>
+                    <a href="#">E-쿠폰</a>
+                </li>
+                <li>
+                    <a href="#">매장안내</a>
+                </li>
+                <li>
+                    <a href="#">고객센터</a>
+                </li>
+                <li>
+                    <a href="#">이벤트&할인</a>
+                </li>
+                <li>
+                    <a href="#">회사소개</a>
+                </li>
+                <li>
+                    <a href="#">가맹점모집</a>
+                </li>
+            </ul>
+            <a href="" class="close_btn" data-link="last"><img src="images/common/close.png" alt="메뉴닫기" width="50" height="50"></a>
+        </nav>
+    </header>
+
+    <div id="container">
+        <section id="cnt1">
+            <h3 class="blind">파파존스 소개</h3>
+            <div id="mainSlider">
+                <ul class="visual">
+                    <li class="list1">
+                        <!-- display: table -->
+                        <div class="txtbox">
+                            <!-- display: table-cell; vertical-align: middle;  이렇게 처리해야 윈도우 창의 높이가 낮아져도 수직 가운데 위치할수 있답니다 -->
+                            <strong>365일 변함없는 <span>파파존스 피자는</span></strong>
+                            <p class="kr">고객에게 최상을 제공합니다.</p>
+                            <p class="en">Papa John's provides the best for our customers.</p>
+                        </div>
+                    </li>
+                    <li class="list2">
+                        <div class="txtbox">
+                            <strong>꿈과 열정의 <span>파파존스 피자는</span></strong>
+                            <p class="kr">한국 최고의 피자 전문점입니다.</p>
+                            <p class="en">Papa John's is the best pizza restaurant in Korea.</p>
+                        </div>
+                    </li>
+                    <li class="list3">
+                        <div class="txtbox">
+                            <strong>더 맛있는 피자를 위해 <span>파파존스 피자는</span></strong>
+                            <p class="kr">72시간 4℃에서 저온숙성한 오리지널 수타 도우를 사용합니다.</p>
+                            <p class="en">Papa Johns uses the original Sutta Dough.</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="paging">
+                    <!-- position: absolute;top: 70%;left: 50%;margin-left: -290px;height: 40px;z-index: 90 -->
+                    <li>
+                        <a href="" data-link="first">best for our customer</a>
+                    </li>
+                    <li>
+                        <a href="">best pizza restaurant</a>
+                    </li>
+                    <li>
+                        <a href="" data-link="last">original sutta doght</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="cnt2">
+            <h3>BEST MENU</h3>
+            <P>정직한 음식이 만드는 행복한 세상! 맛있는 파파존스를 즐기는 방법</P>
+            <div class="tab" id="bestTab">
+                <ul class="btnwrap area clearfix" role="tablist" aria-label="파파존스 베스트 피자">
+                    <li class="btn1" role="presentation">
+                        <a href="" id="tab1" role="tab" aria-controls="bestCnt1"><img src="images/main/best1.png"
+                                alt="아이리쉬 포테이토"></a>
+                    </li>
+                    <li class="btn2" role="presentation">
+                        <a href="" id="tab2" role="tab" aria-controls="bestCnt2"><img src="images/main/best2.png"
+                                alt="존스 페이버릿"></a>
+                    </li>
+                    <li class="btn3" role="presentation">
+                        <a href="" id="tab3" role="tab" aria-controls="bestCnt3"><img src="images/main/best3.png"
+                                alt="치킨바베큐"></a>
+                    </li>
+                    <li class="btn4" role="presentation">
+                        <a href="" id="tab4" role="tab" aria-controls="bestCnt4"><img src="images/main/best4.png"
+                                alt="프리미엄 직화 불고기"></a>
+                    </li>
+                </ul>
+                <div class="cntwrap">
+                    <div id="bestCnt1" role="tabpanel" aria-labelledby="tab1">
+                        <div>
+                            <strong class="p_name">아이리쉬 포테이토</strong>
+                            <p class="material">포테이토, 베이컨, 양송이, 콘, 갈릭소스</p>
+                            <p class="p_txt">진한 갈릭 소스와 담백한 포테이토의 달콤한 만남</p>
+                            <div class="size">
+                                <ul>
+                                    <li>
+                                        <span class="green">L</span>
+                                        <P>25,500원</P>
+                                    </li>
+                                    <li>
+                                        <span class="yellow">F</span>
+                                        <P>29,900원</P>
+                                    </li>
+                                </ul>
+                                <a href=""><span class="blind">아이리쉬 포테이토 </span>메뉴 자세히보기</a>
+                            </div>
+                        </div>
+                        <img src="images/main/best1big.png" alt="">
+                    </div>
+                    <div id="bestCnt2" role="tabpanel" aria-labelledby="tab2">
+                        <div>
+                            <strong class="p_name">존스 페이버릿</strong>
+                            <p class="material">이탈리안 소시지, 페퍼로니, 이탈리안 허브
+                            </p>
+                            <p class="p_txt">이탈리안 소시지, 페퍼로니와 6종의 치즈가 피자</p>
+                            <div class="size">
+                                <ul>
+                                    <li>
+                                        <span class="green">L</span>
+                                        <P>27,500원</P>
+                                    </li>
+                                    <li>
+                                        <span class="yellow">F</span>
+                                        <P>33,900원</P>
+                                    </li>
+                                </ul>
+                                <a href="">메뉴 자세히보기</a>
+                            </div>
+                        </div>
+                        <img src="images/main/best2big.png" alt="">
+                    </div>
+                    <div id="bestCnt3" role="tabpanel" aria-labelledby="tab3">
+                        <div>
+                            <strong class="p_name">치킨바베큐</strong>
+                            <p class="material"> 그릴드 치킨, 베이컨, 타바스코 BBQ 소스</p>
+                            <p class="p_txt">타바스코 BBQ 소스와 그릴드 치킨이 어우러진 피자</p>
+                            <div class="size">
+                                <ul>
+                                    <li>
+                                        <span class="green">L</span>
+                                        <P>25,500원</P>
+                                    </li>
+                                    <li>
+                                        <span class="yellow">F</span>
+                                        <P>29,900원</P>
+                                    </li>
+                                </ul>
+                                <a href="">메뉴 자세히보기</a>
+                            </div>
+                        </div>
+                        <img src="images/main/best3big.png" alt="">
+                    </div>
+                    <div id="bestCnt4" role="tabpanel" aria-labelledby="tab4">
+                        <div>
+                            <strong class="p_name">프리미엄 직화 불고기</strong>
+                            <p class="material">불고기 소스, 모짜렐라 치즈, 표고, 불고기</p>
+                            <p class="p_txt">직화 불고기와 야채, 남녀노소 좋아하는 피자</p>
+                            <div class="size">
+                                <ul>
+                                    <li>
+                                        <span class="green">L</span>
+                                        <P>27,500원</P>
+                                    </li>
+                                    <li>
+                                        <span class="yellow">F</span>
+                                        <P>31,900원</P>
+                                    </li>
+                                </ul>
+                                <a href="">메뉴 자세히보기</a>
+                            </div>
+                        </div>
+                        <img src="images/main/best4big.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cnt3">
+            <h3>NEW MENU</h3>
+            <P>세계가 인정한 한국 대표 피자, 파파존스의 신제품을 소개합니다.</P>
+            <div class="tab" id="newTab">
+                <ul class="btnwrap clearfix" role="tablist" aria-label="파파존스 신메뉴">
+                    <li class="btn" role="presentation">
+                        <a href="" id="tab21" role="tab" aria-controls="newCnt1">전체</a>
+                    </li>
+                    <li class="btn" role="presentation">
+                        <a href="" id="tab22" role="tab" aria-controls="newCnt2">오리지널</a>
+                    </li>
+                    <li class="btn" role="presentation">
+                        <a href="" id="tab23" role="tab" aria-controls="newCnt3">치즈롤</a>
+                    </li>
+                    <li class="btn" role="presentation">
+                        <a href="" id="tab24" role="tab" aria-controls="newCnt4">씬</a>
+                    </li>
+                    <li class="btn" role="presentation">
+                        <a href="" id="tab25" role="tab" aria-controls="newCnt5">골드링</a>
+                    </li>
+                </ul>
+                <div class="cntwrap">
+                    <div id="newCnt1" role="tabpanel" aria-labelledby="tab21">
+                        <div class="new_slider">
+                            <div class="area">
+                                <ul>
+                                    <li>
+                                        <img src="images/main/new1.png" alt="">
+                                        <strong>감바스피자</strong>
+                                        <p>통통한 새우에 올리브오일과 바삭한 갈릭 후레이크,<br>상큼한 토마토와 레몬, 치즈가 어우러진 피자</p>
+                                        <a href="">주문하기</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/main/new2.png" alt="">
+                                        <strong>불닭 크림 치즈 소스</strong>
+                                        <p>매콤한 핫치킨과 불향 가득한 불닭 소스에 부드러운 <br>
+                                            크림앤치즈 소스를 조합하여 깔끔하게 매운 피자</p>
+                                        <a href="">주문하기</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/main/new3.png" alt="">
+                                        <strong>갈릭 페퍼 스테이크</strong>
+                                        <p>두툼한 그릴드 비프와 쫄깃한 스트링 치즈, 갈릭 <br>
+                                            후레이크가 어우러진 프리미엄 스테이크 피자</p>
+                                        <a href="">주문하기</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/main/new4.png" alt="">
+                                        <strong>멜로우 머쉬룸</strong>
+                                        <p>입안 가득 스며드는 버섯과 모짜렐라 치즈의 <br>
+                                            환상의 하모니</p>
+                                        <a href="">주문하기</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/main/new5.png" alt="">
+                                        <strong>식스 치즈</strong>
+                                        <p>모짜렐라, 로마노, 파마산, 아시아고, 폰티나, <br>
+                                            프로볼로네 6종의 치즈 맛을 풍부하게 <br>
+                                            느낄 수 있는 정통 이탈리안 치즈피자</p>
+                                        <a href="">주문하기</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/main/new6.png" alt="">
+                                        <strong>스파이시 이탈리안</strong>
+                                        <p>듬뿍 들어간 이탈리안 소시지와 크러쉬드 <br>
+                                            레드페퍼의 매운맛이 어우러진 <br>
+                                            뛰어난 맛과 향의 피자</p>
+                                        <a href="">주문하기</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="m_prev_next" class="prev_next">
+                                <a href="" class="prev"><img src="images/mobile/prev.png" alt="이전 슬라이더"></a>
+                                <a href="" class="next"><img src="images/mobile/next.png" alt="다음 슬라이더"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="newCnt2" role="tabpanel" aria-labelledby="tab22">
+                        <div class="new_slider">
+                            <div class="area">
+                                <ul>
+                                    <li>
+                                        <img src="images/main/new1.png" alt="">
+                                        <strong>감바스피자</strong>
+                                        <p>통통한 새우에 올리브오일과 바삭한 갈릭 후레이크,<br>상큼한 토마토와 레몬, 치즈가 어우러진 피자</p>
+                                        <a href="">주문하기</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/main/new2.png" alt="">
+                                        <strong>불닭 크림 치즈 소스</strong>
+                                        <p>매콤한 핫치킨과 불향 가득한 불닭 소스에 부드러운 <br>
+                                            크림앤치즈 소스를 조합하여 깔끔하게 매운 피자</p>
+                                        <a href="">주문하기</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/main/new3.png" alt="">
+                                        <strong>갈릭 페퍼 스테이크</strong>
+                                        <p>두툼한 그릴드 비프와 쫄깃한 스트링 치즈, 갈릭 <br>
+                                            후레이크가 어우러진 프리미엄 스테이크 피자</p>
+                                        <a href="">주문하기</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/main/new4.png" alt="">
+                                        <strong>멜로우 머쉬룸</strong>
+                                        <p>입안 가득 스며드는 버섯과 모짜렐라 치즈의 <br>
+                                            환상의 하모니</p>
+                                        <a href="">주문하기</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/main/new5.png" alt="">
+                                        <strong>식스 치즈</strong>
+                                        <p>모짜렐라, 로마노, 파마산, 아시아고, 폰티나, <br>
+                                            프로볼로네 6종의 치즈 맛을 풍부하게 <br>
+                                            느낄 수 있는 정통 이탈리안 치즈피자</p>
+                                        <a href="">주문하기</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/main/new6.png" alt="">
+                                        <strong>스파이시 이탈리안</strong>
+                                        <p>듬뿍 들어간 이탈리안 소시지와 크러쉬드 <br>
+                                            레드페퍼의 매운맛이 어우러진 <br>
+                                            뛰어난 맛과 향의 피자</p>
+                                        <a href="">주문하기</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="m_prev_next" class="prev_next">
+                                <a href="" class="prev"><img src="images/mobile/prev.png" alt="이전 슬라이더"></a>
+                                <a href="" class="next"><img src="images/mobile/next.png" alt="다음 슬라이더"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="newCnt3" role="tabpanel" aria-labelledby="tab23">
+                        <div class="new_slider">
+                            <div class="area">
+                                <ul>
+                                    <li>
+                                        <img src="images/main/cheese1.png" alt="">
+                                        <strong>감바스피자</strong>
+                                        <p>통통한 새우에 올리브오일과 바삭한 갈릭 후레이크,<br>상큼한 토마토와 레몬, 치즈가 어우러진 피자</p>
+                                        <a href="">주문하기</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/main/cheese2.png" alt="">
+                                        <strong>불닭 크림 치즈 소스</strong>
+                                        <p>매콤한 핫치킨과 불향 가득한 불닭 소스에 부드러운 <br>
+                                            크림앤치즈 소스를 조합하여 깔끔하게 매운 피자</p>
+                                        <a href="">주문하기</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/main/cheese3.png" alt="">
+                                        <strong>갈릭 페퍼 스테이크</strong>
+                                        <p>두툼한 그릴드 비프와 쫄깃한 스트링 치즈, 갈릭 <br>
+                                            후레이크가 어우러진 프리미엄 스테이크 피자</p>
+                                        <a href="">주문하기</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/main/cheese4.png" alt="">
+                                        <strong>멜로우 머쉬룸</strong>
+                                        <p>입안 가득 스며드는 버섯과 모짜렐라 치즈의 <br>
+                                            환상의 하모니</p>
+                                        <a href="">주문하기</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/main/cheese5.png" alt="">
+                                        <strong>식스 치즈</strong>
+                                        <p>모짜렐라, 로마노, 파마산, 아시아고, 폰티나, <br>
+                                            프로볼로네 6종의 치즈 맛을 풍부하게 <br>
+                                            느낄 수 있는 정통 이탈리안 치즈피자</p>
+                                        <a href="">주문하기</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/main/cheese6.png" alt="">
+                                        <strong>스파이시 이탈리안</strong>
+                                        <p>듬뿍 들어간 이탈리안 소시지와 크러쉬드 <br>
+                                            레드페퍼의 매운맛이 어우러진 <br>
+                                            뛰어난 맛과 향의 피자</p>
+                                        <a href="">주문하기</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="m_prev_next" class="prev_next">
+                                <a href="" class="prev"><img src="images/mobile/prev.png" alt="이전 슬라이더"></a>
+                                <a href="" class="next"><img src="images/mobile/next.png" alt="다음 슬라이더"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="newCnt4" role="tabpanel" aria-labelledby="tab24">
+                        <div class="new_slider">
+                            <div class="area">
+                                <ul>
+                                    <li>
+                                        <img src="images/main/shin1.png" alt="">
+                                        <strong>감바스피자</strong>
+                                        <p>통통한 새우에 올리브오일과 바삭한 갈릭 후레이크,<br>상큼한 토마토와 레몬, 치즈가 어우러진 피자</p>
+                                        <a href="">주문하기</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/main/shin2.png" alt="">
+                                        <strong>불닭 크림 치즈 소스</strong>
+                                        <p>매콤한 핫치킨과 불향 가득한 불닭 소스에 부드러운 <br>
+                                            크림앤치즈 소스를 조합하여 깔끔하게 매운 피자</p>
+                                        <a href="">주문하기</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/main/shin3.png" alt="">
+                                        <strong>갈릭 페퍼 스테이크</strong>
+                                        <p>두툼한 그릴드 비프와 쫄깃한 스트링 치즈, 갈릭 <br>
+                                            후레이크가 어우러진 프리미엄 스테이크 피자</p>
+                                        <a href="">주문하기</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/main/shin4.png" alt="">
+                                        <strong>멜로우 머쉬룸</strong>
+                                        <p>입안 가득 스며드는 버섯과 모짜렐라 치즈의 <br>
+                                            환상의 하모니</p>
+                                        <a href="">주문하기</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/main/shin5.png" alt="">
+                                        <strong>식스 치즈</strong>
+                                        <p>모짜렐라, 로마노, 파마산, 아시아고, 폰티나, <br>
+                                            프로볼로네 6종의 치즈 맛을 풍부하게 <br>
+                                            느낄 수 있는 정통 이탈리안 치즈피자</p>
+                                        <a href="">주문하기</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/main/shin6.png" alt="">
+                                        <strong>스파이시 이탈리안</strong>
+                                        <p>듬뿍 들어간 이탈리안 소시지와 크러쉬드 <br>
+                                            레드페퍼의 매운맛이 어우러진 <br>
+                                            뛰어난 맛과 향의 피자</p>
+                                        <a href="">주문하기</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="m_prev_next" class="prev_next">
+                                <a href="" class="prev"><img src="images/mobile/prev.png" alt="이전 슬라이더"></a>
+                                <a href="" class="next"><img src="images/mobile/next.png" alt="다음 슬라이더"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="newCnt5" role="tabpanel" aria-labelledby="tab25">
+                        <div class="new_slider">
+                            <div class="area">
+                                <ul>
+                                    <li>
+                                        <img src="images/main/gold1.png" alt="">
+                                        <strong>불닭 크림 치즈 소스</strong>
+                                        <p>매콤한 핫치킨과 불향 가득한 불닭 소스에 부드러운 <br>
+                                            크림앤치즈 소스를 조합하여 깔끔하게 매운 피자</p>
+                                        <a href="">주문하기</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/main/gold2.png" alt="">
+                                        <strong>갈릭 페퍼 스테이크</strong>
+                                        <p>두툼한 그릴드 비프와 쫄깃한 스트링 치즈, 갈릭 <br>
+                                            후레이크가 어우러진 프리미엄 스테이크 피자</p>
+                                        <a href="">주문하기</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/main/gold3.png" alt="">
+                                        <strong>멜로우 머쉬룸</strong>
+                                        <p>입안 가득 스며드는 버섯과 모짜렐라 치즈의 <br>
+                                            환상의 하모니</p>
+                                        <a href="">주문하기</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/main/gold4.png" alt="">
+                                        <strong>식스 치즈</strong>
+                                        <p>모짜렐라, 로마노, 파마산, 아시아고, 폰티나, <br>
+                                            프로볼로네 6종의 치즈 맛을 풍부하게 <br>
+                                            느낄 수 있는 정통 이탈리안 치즈피자</p>
+                                        <a href="">주문하기</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/main/gold5.png" alt="">
+                                        <strong>스파이시 이탈리안</strong>
+                                        <p>듬뿍 들어간 이탈리안 소시지와 크러쉬드 <br>
+                                            레드페퍼의 매운맛이 어우러진 <br>
+                                            뛰어난 맛과 향의 피자</p>
+                                        <a href="">주문하기</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="m_prev_next" class="prev_next">
+                                <a href="" class="prev"><img src="images/mobile/prev.png" alt="이전 슬라이더"></a>
+                                <a href="" class="next"><img src="images/mobile/next.png" alt="다음 슬라이더"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cnt4">
+            <div class="area clearfix">
+                <div class="left f_l">
+                    <ul>
+                        <li class="txt orange">
+                            <div>
+                                <strong>해피투게더 <br>SET 3종 출시</strong>
+                                <p>인기피자 3종 라지사이즈 2판 <br>주문시 두번째 피자 50% 할인</p>
+                            </div>
+                        </li>
+                        <li class="txt yellow">
+                            <div>
+                                <strong>감바스 피자 출시 <br>기념 EVENT</strong>
+                                <p>최대 10,000원 할인 <br>L 22.500 F25,900 P33,500 <br>기간 : 2019.6.1 ~ 2019.7.5</p>
+                            </div>
+                        </li>
+                        <li class="txt2">
+                            <div>
+                                <strong>PAPA JOHN'S <br>초특가 TIME SALE</strong>
+                                <p>월 ~ 금, 14시~17시까지 <br>BEST 피자 + 콜라 1.25 </p>
+                                <a href="">주문하기</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right f_r">
+                    <div class="friday">
+                        <div>
+                            <strong>PAPA FRIDAY</strong>
+                            <p>매주 금요일 라지 사이즈 인기 피자 <br>7종 매장 주문시 1 + 1</p>
+                            <a href="">주문하기</a>
+                        </div>
+                    </div>
+                    <div class="store">
+                        <div>
+                            <strong>신규매장 </strong>
+                            <p>서울시 서초구 사평대로57길 54 <br>서울시 동작구 상도로 59전북 익산시 창인동2가 1 익산역 1층</p>
+                            <a href="">NEW STORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cnt5">
+            <h3>가맹상담</h3>
+            <p>10년의 운영 노하우, 창업절차 비용, 추가지원까지 아낌없는  <br>창업노하우를친절하게 상담해드립니다.</p>
+            <a href="">상담하러가기</a>
+        </section>
+    </div>
+
+    <footer id="footer">
+        <img src="images/common/foot-logo.png" alt="파파존스">
+        <ul class="clearfix">
+            <li>고객센터</li>
+            <li>회사소개</li>
+            <li>가맹점 모집</li>
+            <li>개인정보 취급방침</li>
+            <li>이용약관</li>
+        </ul>
+        <address>
+            서울시 강남구 신사동 614-3 융기빌딩4층 135-894 Tel:1577-8080 Fax:02-515-8448 <br>
+            대표이사:서창우 개인정보관리 책임자:전용관 사업자등록번호:211-87-25621 통신판매신고:강남11495호 <br>
+            COPYRIGHT © 2018 PAPAJOHNS.ALL RIGHTS RESERVED
+        </address>
+    </footer>
+</body>
+
+</html>

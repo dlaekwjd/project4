@@ -1,0 +1,183 @@
+/* @mixin */
+@mixin pos($val, $top, $left) {
+    position: $val;
+    top: $top;
+    left: $left;
+}
+@mixin bgSize($val) {
+    -webkit-background-size: $val;
+    -moz-background-size: $val;
+    -o-background-size: $val;
+    background-size: $val;
+}
+@mixin boxSize {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+@mixin clearfix {
+    content: "";display: block;clear: both;
+}
+@mixin blind {
+    font-size: 0;line-height: 0;width: 1px;height: 1px;overflow: hidden;position: absolute;top: 0;left: -9999px;text-indent: -9999px
+}
+
+
+/* header */
+#header{
+    position: fixed;top: 0;left: 0;right: 0;height: 80px;background: #fff;border-bottom: 1px solid #ccc;z-index: 200;
+    .sub_logo{text-align: center}
+    .open_btn{position: absolute;top: 25px;right: 5%;}
+}
+
+#mSnb{
+    display: block;position: fixed;left: 0;bottom: 100%;width: 100%;height: 100%;background: #fff;text-align: center;font-weight: 500;z-index: 500;
+    > ul{
+        font-size: 20px;color: #cb1a1a;width: 100%;margin: 100px auto;
+        > li{
+            width: 100%;border-bottom: 1px solid #cb1a1a;
+            > a{display: block;width: 100%;height: 100px;line-height: 100px}
+        }
+    }
+}
+#mSnb > ul > li:hover a, #mSnb > ul > li a:focus, #mSnb > ul > li.on a{background: #006e62;color: #fff}
+#mSnb .close_btn{position: absolute;top: 48px;right: 5%;width: 30px;height: 30px;}
+
+/* content */
+#content{position: relative;padding-top: 80px;}
+.sub_visual{background: url("../images/pizza/sub_mobile.jpg") no-repeat;width: 100%;height: 325px;color: #666;@include bgSize(cover)}
+.sub_visual h2, .sub_visual p{text-align: center}
+.sub_visual h2{font-size: 30px;padding-top: 30px;}
+.sub_visual p{font-size: 20px;padding-top: 10px;}
+
+/* tab */
+#content div #pizzaTab{position: relative;margin-top: 10px;}
+#content div #pizzaTab >.btnwrap{
+    text-align: center;width: 100%;margin: 30px auto 20px;padding: 0 20px;@include boxSize;
+    > li{
+        float: left;width: 23%;margin-left: 2%;
+        &:first-child{margin-left: 0;}
+        > a{
+            display: block;font-size: 13px;height: 30px;font-weight: 700;
+        }
+    }
+}
+#content div #pizzaTab >.btnwrap > li > a:hover, #content div #pizzaTab >.btnwrap > li > a:focus, #content div #pizzaTab >.btnwrap > li.on > a{color: #cb1a1a;border-color: #cb1a1a;}
+
+/* tab_content */
+#content div #pizzaTab .cntwrap{
+    width: 100%;
+    > div{
+        display: none;
+        &:first-child{display: block}
+        ul{width: 100%;padding: 0 20px;box-sizing: border-box;margin: 0 auto;}
+    }
+}
+#content div #pizzaTab .cntwrap > div  > ul > li{
+    width: auto;height: auto;border: 1px solid #ccc;margin-bottom: 40px;padding: 10px 0;
+    &:after{@include clearfix}
+    > img{float: left;padding-right: 2%;padding-left:2%;width: 41%;margin-top: 25px;}
+    .txt_box{
+        float: left;width: 53%;padding-right: 2%;height: auto;
+        strong{display: block;font-size: 16px;text-align: center}
+        p{font-size: 12px;text-align: left;margin: 5px 0}
+        #pizzaKind{width: 55%;float: left;margin-right: 5%;padding-left: 10px}
+        .num_item{
+            float: left;position: relative;width: 40%;float: left;
+            input[type="text"]{text-align: center;width: 100%;height: 100%;}
+            .num_up, .num_down{position: absolute;top: 50%;}
+            .num_up{right: 10px;margin-top: -6px;}
+            .num_down{left: 10px;}
+        }
+        .menu{width: 53%;background: #316910;margin-right: 1%;}
+        #pizzaSize{width: 100%;margin-top: 5px;padding-left: 10px;margin-bottom: 5px}
+        a{display: inline-block;height: auto;line-height: 25px;text-align: center;color: #fff;font-size: 12px}
+        .pizza_cart{width: 43%;background: #000}
+    }
+}
+.txt_box #pizzaKind, .txt_box .num_item, .txt_box #pizzaSize{height: 20px;line-height: 20px;background: #eee;font-size: 12px}
+
+/* pizza_sub */
+#content.sub{
+    padding-top: 80px;
+    h2{@include blind}
+    article{
+        position: relative;padding-top: 58px;text-align: center;
+        h3{font-size: 22px;font-weight: 500}
+    }
+}
+#content.sub article{position: relative;padding-top: 45px;text-align: center;}
+#content.sub article h3{font-size: 22px;font-weight: 500}
+
+/* article1 */
+#content.sub .irish{padding-top: 0;text-align: center}
+#content.sub .irish .back{background: #eee;height: 560px;}
+#content.sub .irish div .detail{
+    width: 300px;padding-top: 20px;text-align: center;font-weight: 500;margin: 0 auto;
+    .p_detail{font-size: 14px;padding-top: 10px;font-weight: normal}
+    ul{
+        padding: 0 5px;
+        li{
+            float: left;
+            .price{display: inline-block;font-size: 16px;margin-top: 10px;}
+            span{color: #cb1a1a;font-size: 16px;padding-left: 15px;}
+            &:first-child span{padding-left: 7px;}
+        }
+    }
+    div a{
+        margin-top: 15px;display: inline-block;width: 54px;height: 54px;line-height: 54px;background: #cb1a1a;color: #fff;border-radius: 50%;font-weight: normal;margin-left: 10px;font-size: 12px;
+        &:first-child{margin-left: 0;}
+    }
+    .cntwrap img{position: absolute;top: 330px;left: 50%;margin-left: -130px;width: 261px;height: auto;}
+    a{display: inline-block;;width: 270px;height: 50px;line-height: 50px;color: #fff;text-align: center;background: #007236;margin-top: 42px;}
+    .change_txt{
+        text-align: left;padding-top: 23px;font-size: 16px;
+        #content .irish div .detail .change_txt span{font-size: 12px}
+
+    }
+}
+
+/* article2 */
+#content.sub .option .mChange{
+    display: block;
+    li{
+        display: inline-block;padding-top: 30px;width: 70px;padding-left: 10px;
+        span{font-size: 14px;margin-bottom: 15px;font-weight: 500}
+        select{width: 60px;height: 30px;font-size: 12px;border-bottom: 1px solid #000;}
+    }
+}
+
+/* article3 */
+#content.sub .topping ul{
+    width: 320px;margin: 0 auto;
+    li{
+        float: left;padding-top: 30px;padding-left: 10px;
+        &:nth-child(odd){padding-left: 0;}
+        > img{width: 150px;height: auto;}
+    }
+}
+
+/* article4 */
+#content.sub .papa h3{font-size: 19px}
+#content.sub .papa .papa_story{
+    width: 100%;
+    li{
+        margin-top: 30px;padding: 0 20px;
+        .txt strong{font-size: 16px}
+        .txt p{font-size: 14px;margin-top: 15px;}
+    }
+}
+#content .papa .papa_story .even img, #content .papa .papa_story .odd img{width: auto;height: auto;}
+#content .papa .papa_story .even .txt, #content .papa .papa_story .odd .txt{width: auto;min-height: 150px;margin: 10px auto;text-align: center}
+
+#content.sub .nutrient .mTable{
+    display: block;margin: 0 auto;margin-top: 20px;width: 320px;
+    th, td{border: 1px solid #ccc;height: 30px;}
+    th{width: 150px;}
+    td{width: 100px;}
+}
+
+#content .allergy{
+    padding-bottom: 50px;
+    p{font-size: 16px;margin-top: 20px}
+}

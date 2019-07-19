@@ -1,0 +1,376 @@
+/* @mixin */
+/* header */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  z-index: 200; }
+  #header .sub_logo {
+    text-align: center; }
+  #header .open_btn {
+    position: absolute;
+    top: 25px;
+    right: 5%; }
+
+#mSnb {
+  display: block;
+  position: fixed;
+  left: 0;
+  bottom: 100%;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  text-align: center;
+  font-weight: 500;
+  z-index: 500; }
+  #mSnb > ul {
+    font-size: 20px;
+    color: #cb1a1a;
+    width: 100%;
+    margin: 100px auto; }
+    #mSnb > ul > li {
+      width: 100%;
+      border-bottom: 1px solid #cb1a1a; }
+      #mSnb > ul > li > a {
+        display: block;
+        width: 100%;
+        height: 100px;
+        line-height: 100px; }
+
+#mSnb > ul > li:hover a, #mSnb > ul > li a:focus, #mSnb > ul > li.on a {
+  background: #006e62;
+  color: #fff; }
+
+#mSnb .close_btn {
+  position: absolute;
+  top: 48px;
+  right: 5%;
+  width: 30px;
+  height: 30px; }
+
+/* content */
+#content {
+  position: relative;
+  padding-top: 80px; }
+
+.sub_visual {
+  background: url("../images/pizza/sub_mobile.jpg") no-repeat;
+  width: 100%;
+  height: 325px;
+  color: #666;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.sub_visual h2, .sub_visual p {
+  text-align: center; }
+
+.sub_visual h2 {
+  font-size: 30px;
+  padding-top: 30px; }
+
+.sub_visual p {
+  font-size: 20px;
+  padding-top: 10px; }
+
+/* tab */
+#content div #pizzaTab {
+  position: relative;
+  margin-top: 10px; }
+
+#content div #pizzaTab > .btnwrap {
+  text-align: center;
+  width: 100%;
+  margin: 30px auto 20px;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  #content div #pizzaTab > .btnwrap > li {
+    float: left;
+    width: 23%;
+    margin-left: 2%; }
+    #content div #pizzaTab > .btnwrap > li:first-child {
+      margin-left: 0; }
+    #content div #pizzaTab > .btnwrap > li > a {
+      display: block;
+      font-size: 13px;
+      height: 30px;
+      font-weight: 700; }
+
+#content div #pizzaTab > .btnwrap > li > a:hover, #content div #pizzaTab > .btnwrap > li > a:focus, #content div #pizzaTab > .btnwrap > li.on > a {
+  color: #cb1a1a;
+  border-color: #cb1a1a; }
+
+/* tab_content */
+#content div #pizzaTab .cntwrap {
+  width: 100%; }
+  #content div #pizzaTab .cntwrap > div {
+    display: none; }
+    #content div #pizzaTab .cntwrap > div:first-child {
+      display: block; }
+    #content div #pizzaTab .cntwrap > div ul {
+      width: 100%;
+      padding: 0 20px;
+      box-sizing: border-box;
+      margin: 0 auto; }
+
+#content div #pizzaTab .cntwrap > div > ul > li {
+  width: auto;
+  height: auto;
+  border: 1px solid #ccc;
+  margin-bottom: 40px;
+  padding: 10px 0; }
+  #content div #pizzaTab .cntwrap > div > ul > li:after {
+    content: "";
+    display: block;
+    clear: both; }
+  #content div #pizzaTab .cntwrap > div > ul > li > img {
+    float: left;
+    padding-right: 2%;
+    padding-left: 2%;
+    width: 41%;
+    margin-top: 25px; }
+  #content div #pizzaTab .cntwrap > div > ul > li .txt_box {
+    float: left;
+    width: 53%;
+    padding-right: 2%;
+    height: auto; }
+    #content div #pizzaTab .cntwrap > div > ul > li .txt_box strong {
+      display: block;
+      font-size: 16px;
+      text-align: center; }
+    #content div #pizzaTab .cntwrap > div > ul > li .txt_box p {
+      font-size: 12px;
+      text-align: left;
+      margin: 5px 0; }
+    #content div #pizzaTab .cntwrap > div > ul > li .txt_box #pizzaKind {
+      width: 55%;
+      float: left;
+      margin-right: 5%;
+      padding-left: 10px; }
+    #content div #pizzaTab .cntwrap > div > ul > li .txt_box .num_item {
+      float: left;
+      position: relative;
+      width: 40%;
+      float: left; }
+      #content div #pizzaTab .cntwrap > div > ul > li .txt_box .num_item input[type="text"] {
+        text-align: center;
+        width: 100%;
+        height: 100%; }
+      #content div #pizzaTab .cntwrap > div > ul > li .txt_box .num_item .num_up, #content div #pizzaTab .cntwrap > div > ul > li .txt_box .num_item .num_down {
+        position: absolute;
+        top: 50%; }
+      #content div #pizzaTab .cntwrap > div > ul > li .txt_box .num_item .num_up {
+        right: 10px;
+        margin-top: -6px; }
+      #content div #pizzaTab .cntwrap > div > ul > li .txt_box .num_item .num_down {
+        left: 10px; }
+    #content div #pizzaTab .cntwrap > div > ul > li .txt_box .menu {
+      width: 53%;
+      background: #316910;
+      margin-right: 1%; }
+    #content div #pizzaTab .cntwrap > div > ul > li .txt_box #pizzaSize {
+      width: 100%;
+      margin-top: 5px;
+      padding-left: 10px;
+      margin-bottom: 5px; }
+    #content div #pizzaTab .cntwrap > div > ul > li .txt_box a {
+      display: inline-block;
+      height: auto;
+      line-height: 25px;
+      text-align: center;
+      color: #fff;
+      font-size: 12px; }
+    #content div #pizzaTab .cntwrap > div > ul > li .txt_box .pizza_cart {
+      width: 43%;
+      background: #000; }
+
+.txt_box #pizzaKind, .txt_box .num_item, .txt_box #pizzaSize {
+  height: 20px;
+  line-height: 20px;
+  background: #eee;
+  font-size: 12px; }
+
+/* pizza_sub */
+#content.sub {
+  padding-top: 80px; }
+  #content.sub h2 {
+    font-size: 0;
+    line-height: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: -9999px;
+    text-indent: -9999px; }
+  #content.sub article {
+    position: relative;
+    padding-top: 58px;
+    text-align: center; }
+    #content.sub article h3 {
+      font-size: 22px;
+      font-weight: 500; }
+
+#content.sub article {
+  position: relative;
+  padding-top: 45px;
+  text-align: center; }
+
+#content.sub article h3 {
+  font-size: 22px;
+  font-weight: 500; }
+
+/* article1 */
+#content.sub .irish {
+  padding-top: 0;
+  text-align: center; }
+
+#content.sub .irish .back {
+  background: #eee;
+  height: 560px; }
+
+#content.sub .irish div .detail {
+  width: 300px;
+  padding-top: 20px;
+  text-align: center;
+  font-weight: 500;
+  margin: 0 auto; }
+  #content.sub .irish div .detail .p_detail {
+    font-size: 14px;
+    padding-top: 10px;
+    font-weight: normal; }
+  #content.sub .irish div .detail ul {
+    padding: 0 5px; }
+    #content.sub .irish div .detail ul li {
+      float: left; }
+      #content.sub .irish div .detail ul li .price {
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 10px; }
+      #content.sub .irish div .detail ul li span {
+        color: #cb1a1a;
+        font-size: 16px;
+        padding-left: 15px; }
+      #content.sub .irish div .detail ul li:first-child span {
+        padding-left: 7px; }
+  #content.sub .irish div .detail div a {
+    margin-top: 15px;
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    line-height: 54px;
+    background: #cb1a1a;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: normal;
+    margin-left: 10px;
+    font-size: 12px; }
+    #content.sub .irish div .detail div a:first-child {
+      margin-left: 0; }
+  #content.sub .irish div .detail .cntwrap img {
+    position: absolute;
+    top: 330px;
+    left: 50%;
+    margin-left: -130px;
+    width: 261px;
+    height: auto; }
+  #content.sub .irish div .detail a {
+    display: inline-block;
+    width: 270px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    background: #007236;
+    margin-top: 42px; }
+  #content.sub .irish div .detail .change_txt {
+    text-align: left;
+    padding-top: 23px;
+    font-size: 16px; }
+    #content.sub .irish div .detail .change_txt #content .irish div .detail .change_txt span {
+      font-size: 12px; }
+
+/* article2 */
+#content.sub .option .mChange {
+  display: block; }
+  #content.sub .option .mChange li {
+    display: inline-block;
+    padding-top: 30px;
+    width: 70px;
+    padding-left: 10px; }
+    #content.sub .option .mChange li span {
+      font-size: 14px;
+      margin-bottom: 15px;
+      font-weight: 500; }
+    #content.sub .option .mChange li select {
+      width: 60px;
+      height: 30px;
+      font-size: 12px;
+      border-bottom: 1px solid #000; }
+
+/* article3 */
+#content.sub .topping ul {
+  width: 320px;
+  margin: 0 auto; }
+  #content.sub .topping ul li {
+    float: left;
+    padding-top: 30px;
+    padding-left: 10px; }
+    #content.sub .topping ul li:nth-child(odd) {
+      padding-left: 0; }
+    #content.sub .topping ul li > img {
+      width: 150px;
+      height: auto; }
+
+/* article4 */
+#content.sub .papa h3 {
+  font-size: 19px; }
+
+#content.sub .papa .papa_story {
+  width: 100%; }
+  #content.sub .papa .papa_story li {
+    margin-top: 30px;
+    padding: 0 20px; }
+    #content.sub .papa .papa_story li .txt strong {
+      font-size: 16px; }
+    #content.sub .papa .papa_story li .txt p {
+      font-size: 14px;
+      margin-top: 15px; }
+
+#content .papa .papa_story .even img, #content .papa .papa_story .odd img {
+  width: auto;
+  height: auto; }
+
+#content .papa .papa_story .even .txt, #content .papa .papa_story .odd .txt {
+  width: auto;
+  min-height: 150px;
+  margin: 10px auto;
+  text-align: center; }
+
+#content.sub .nutrient .mTable {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 320px; }
+  #content.sub .nutrient .mTable th, #content.sub .nutrient .mTable td {
+    border: 1px solid #ccc;
+    height: 30px; }
+  #content.sub .nutrient .mTable th {
+    width: 150px; }
+  #content.sub .nutrient .mTable td {
+    width: 100px; }
+
+#content .allergy {
+  padding-bottom: 50px; }
+  #content .allergy p {
+    font-size: 16px;
+    margin-top: 20px; }
+
+/*# sourceMappingURL=sub.css.map */
