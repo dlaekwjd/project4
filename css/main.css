@@ -340,13 +340,13 @@
         line-height: 39px;
         padding-left: 20px;
         margin: 10px 0 15px 10px; }
-  #cnt3 #newTab div div .new_slider #m_prev_next {
+  #cnt3 #newTab div div .new_slider .mbtm {
     display: block; }
-    #cnt3 #newTab div div .new_slider #m_prev_next a {
+    #cnt3 #newTab div div .new_slider .mbtm a {
       position: absolute;
       top: 50%;
       width: 30px; }
-    #cnt3 #newTab div div .new_slider #m_prev_next .next {
+    #cnt3 #newTab div div .new_slider .mbtm .next {
       right: 0; }
 
 /* section4 */
